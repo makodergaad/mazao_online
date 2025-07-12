@@ -49,6 +49,30 @@
       object-fit: cover;
       border-radius: 8px;
     }
+    footer {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .contact {
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -56,7 +80,7 @@
     <h1>Soko la Nafaka Tanzania</h1>
     <p>Pata Elimu, Ujuzi, Bei, Masoko na Maeneo ya Mazao ya Nafaka</p>
   </header>
-  
+
   <div class="container">
     <div class="section" id="education">
       <h2>Elimu na Ujuzi</h2>
@@ -67,7 +91,31 @@
       <h2>Masoko ya Nafaka na Bei</h2>
       <div class="market" id="marketList"></div>
     </div>
+
+    <div class="section" id="gallery">
+      <h2>Mazao Yanayouzwa Mtandaoni</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1603574670812-d24560880210" alt="Uwele" />
+        <img src="https://images.unsplash.com/photo-1611175694982-2013d5e6b55e" alt="Mahindi" />
+        <img src="https://images.unsplash.com/photo-1603792442524-8e2a9042d90b" alt="Mchele" />
+        <img src="https://images.unsplash.com/photo-1624377639579-cf9dd36b9794" alt="Mtama" />
+      </div>
+    </div>
+
+    <div class="section contact" id="contact">
+      <h2>Wasiliana Nasi</h2>
+      <p>Kwa msaada, ushauri au kushirikiana nasi tafadhali wasiliana kupitia:</p>
+      <ul>
+        <li><strong>Email:</strong> info@sokolanafaka.co.tz</li>
+        <li><strong>Simu:</strong> +255 712 345 678</li>
+        <li><strong>Anuani:</strong> Soko la Nafaka, Mtaa wa Kilimo, Dodoma</li>
+      </ul>
+    </div>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Soko la Nafaka Tanzania. Huduma Bora kwa Wakulima na Wanunuzi.</p>
+  </footer>
 
   <script>
     const markets = [
@@ -115,3 +163,4 @@
   </script>
 </body>
 </html>
+
